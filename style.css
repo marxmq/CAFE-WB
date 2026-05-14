@@ -191,3 +191,71 @@ iframe {
         font-size: 1.2rem;
     }
 }
+
+/*меню */
+.menu-main {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 20px 0;
+}
+
+.category-card {
+    height: 350px;
+    border-radius: 20px;
+    text-decoration: none;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.category-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+.card-content {
+    width: 100%;
+    padding: 30px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    text-align: center;
+}
+
+.card-content span {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-bottom: 2px solid #c89f7b;
+    padding-bottom: 5px;
+}
+
+.coffee { 
+    background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=800'); 
+}
+
+.desserts { 
+    background-image: url('https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=800'); 
+}
+
+@media screen and (max-width: 600px) {
+    .category-card {
+        height: 250px;
+    }
+    .card-content span {
+        font-size: 20px;
+    }
+}
