@@ -192,16 +192,14 @@ iframe {
     }
 }
 
-/* --- Центрування головного контенту меню --- */
+
 .menu-main {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Центрує все по горизонталі */
-    padding: 60px 20px;
+    align-items: center;
     max-width: 1200px;
     margin: 0 auto;
 }
-
 
 .menu-intro-centered {
     text-align: center; 
@@ -232,7 +230,6 @@ iframe {
     color: #666;
     margin-bottom: 40px;
 }
-
 
 .intro-image-wrapper {
     width: 100%;
