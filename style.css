@@ -192,50 +192,100 @@ iframe {
     }
 }
 
-.menu-intro {
+/* --- Центрування головного контенту меню --- */
+.menu-main {
     display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    align-items: center;
-    background: #ffffff;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-    margin-bottom: 40px;
-    text-align: left;
+    flex-direction: column;
+    align-items: center; /* Центрує все по горизонталі */
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.menu-intro-text {
-    flex: 1;
-    min-width: 300px;
+
+.menu-intro-centered {
+    text-align: center; 
+    max-width: 800px;  
+    margin-bottom: 60px;
 }
 
-.menu-intro-text h2 {
+.intro-content h2 {
+    font-size: 2.8rem;
     color: #4a3b32;
-    font-size: 2rem;
-    margin-top: 0;
-    margin-bottom: 15px;
-    border-bottom: 3px solid #c89f7b;
+    margin-bottom: 20px;
+    position: relative;
     display: inline-block;
-    padding-bottom: 5px;
 }
 
-.menu-intro-text p {
-    font-size: 1.15rem;
-    line-height: 1.6;
-    color: #555;
-    margin-bottom: 15px;
+.intro-content h2::after {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 3px;
+    background: #c89f7b;
+    margin: 10px auto 0;
 }
 
-.menu-intro-image {
-    flex: 1;
-    min-width: 300px;
+.intro-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 40px;
 }
 
-.menu-intro-image img {
+
+.intro-image-wrapper {
     width: 100%;
-    border-radius: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.intro-image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.intro-image-wrapper:hover img {
+    transform: scale(1.02);
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    width: 100%;
+    max-width: 1000px;
+    justify-content: center;
+}
+
+.category-card {
+    height: 300px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    object-fit: cover;
-    max-height: 350px;
+    transition: all 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+@media screen and (max-width: 768px) {
+    .intro-content h2 {
+        font-size: 2rem;
+    }
+    .menu-main {
+        padding: 40px 15px;
+    }
 }
