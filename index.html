@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кав’ярня - Головна</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="parallax-container">
+    <div id="coffee-bg-layer"></div>
+    <div id="coffee-text-layer">
+        <h1>Кав'ярня "Аромат"</h1>
+        <p>Справжня магія у кожній чашці</p>
+    </div>
+</div>
+
+<div class="parallax-fixed"></div>
+
+</div>
+    <header class="header-container">
+        <h1 id="dynamic-greeting">Вітаємо у нашій кав’ярні "Вінницький круасан"!</h1>
+        <nav class="nav-menu">
+            <ul>
+                <li><strong>Головна</strong></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="menu.html">Меню</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main style="padding: 20px; text-align: center;">
+        <h2>Найкраща кава у вашому місті</h2>
+        <p>Ми використовуємо лише свіжообсмажені зерна 100% арабіки. Завітайте до нас за порцією натхнення та ароматним еспресо перед робочим днем.</p>
+        
+        <img src="interior.jpg" alt="Затишний інтер'єр кав'ярні" title="Наш затишний зал" width="500">
+        
+        <h3>Атмосфера нашого закладу:</h3>
+        <iframe width="500" height="281" src="https://www.youtube.com/watch?v=_bNbada12iM"></iframe>
+        <h2>Не знаєте, що обрати?</h2>
+        <p>Натисніть на кнопку, і ми підберемо напій спеціально для вас!</p>
+        
+        <button class="accent-button" onclick="suggestCoffee()">Що мені випити?</button>
+        
+        <p id="coffee-result" style="margin-top: 15px; font-size: 18px;"></p>
+    </main>
+    <hr>
+    <footer>
+        <p>&copy; 2026 Вінницький круасан. Всі права захищено.</p>
+    </footer>
+</body>
+</html>
