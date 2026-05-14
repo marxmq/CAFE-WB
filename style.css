@@ -263,78 +263,22 @@ iframe {
     justify-content: center;
 }
 
-/* Збільшуємо висоту карток та робимо їх масивнішими */
 .category-card {
-    height: 450px; /* Було 300px */
-    border-radius: 25px;
+    height: 300px;
+    border-radius: 20px;
     background-size: cover;
     background-position: center;
     position: relative;
     overflow: hidden;
     display: flex;
     align-items: flex-end;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-    border: 1px solid rgba(255,255,255,0.1);
-}
-
-/* Акцент при наведенні: картка "спливає" і стає чіткішою */
-.category-card:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 25px 50px rgba(74, 59, 50, 0.3);
-}
-
-/* Контент всередині (затемнення та вирівнювання) */
-.card-content {
-    width: 100%;
-    padding: 40px;
-    background: linear-gradient(to top, rgba(0,0,0,0.9) 10%, transparent);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-}
-
-/* Заголовок категорії став більшим */
-.category-title {
-    color: #ffffff;
-    font-size: 32px; /* Було 26px */
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-}
-
-.btn-action {
-    background-color: #c89f7b;
-    color: #ffffff;
-    padding: 12px 30px;
-    border-radius: 50px;
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
-    border: 2px solid transparent;
 }
 
-.category-card:hover .btn-action {
-    background-color: #ffffff;
-    color: #4a3b32;
-    transform: scale(1.1);
-    box-shadow: 0 5px 15px rgba(200, 159, 123, 0.4);
-}
-
-.nav-menu li a {
-    padding: 15px 35px;
-    font-size: 18px;
-    border-radius: 8px;
-    margin: 0 5px;
-}
-
-.nav-menu li a:hover {
-    background-color: #c89f7b;
-    box-shadow: 0 4px 12px rgba(200, 159, 123, 0.3);
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
 
 @media screen and (max-width: 768px) {
