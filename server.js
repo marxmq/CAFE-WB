@@ -5,7 +5,10 @@ const { Pool } = require('pg');
 const app = express();
 const port = 3000;
 
-app.use(express.static(__dirname));
+app.use(express.static(__dirname, {
+    maxAge: '1d',
+    immutable: true
+}));
 
 app.use(cors());
 app.use(express.json());
