@@ -1,8 +1,10 @@
 const express = require('express');
+const compression = require('compression');
 const cors = require('cors');
 const { Pool } = require('pg');
 
 const app = express();
+app.use(compression());
 const port = 3000;
 
 app.use(express.static(__dirname, {
