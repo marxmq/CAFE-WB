@@ -2,25 +2,28 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Кав'ярня "Вінницький круасан" | Найкраща кава та свіжа випічка у Вінниці</title>
     <meta name="description" content="Завітайте до кав'ярні «Вінницький круасан». Пропонуємо свіжообсмажену каву, авторські десерти та затишну атмосферу в центрі Вінниці.">
+    
+    <link rel="preconnect" href="https://www.youtube.com">
+    
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
+    
     <div class="parallax-container">
-    <div id="coffee-bg-layer"></div>
-    <div id="coffee-text-layer">
-        <h1>Кав'ярня "Аромат"</h1>
-        <p>Справжня магія у кожній чашці</p>
+        <div id="coffee-bg-layer"></div>
+        <div id="coffee-text-layer">
+            <h1>Кав'ярня "Вінницький круасан"</h1> <p>Справжня магія у кожній чашці</p>
+        </div>
     </div>
-</div>
-
-<div class="parallax-fixed"></div>
-
-</div>
+    
+    <div class="parallax-fixed"></div>
     <header class="header-container">
-        <h1 id="dynamic-greeting">Вітаємо у нашій кав’ярні "Вінницький круасан"!</h1>
+        <h1 id="dynamic-greeting">Вітаємо у нашій кав’ярні!</h1>
         <nav class="nav-menu">
             <ul>
                 <li><strong>Головна</strong></li>
@@ -30,23 +33,29 @@
             </ul>
         </nav>
     </header>
-    <hr>
-    <main style="padding: 20px; text-align: center;">
+    
+    <main style="padding: 40px 20px; text-align: center; max-width: 1200px; margin: 0 auto;">
         <h2>Найкраща кава у вашому місті</h2>
-        <p>Ми використовуємо лише свіжообсмажені зерна 100% арабіки. Завітайте до нас за порцією натхнення та ароматним еспресо перед робочим днем.</p>
+        <p style="max-width: 700px; margin: 0 auto 30px; font-size: 1.1rem; line-height: 1.6;">
+            Ми використовуємо лише свіжообсмажені зерна 100% арабіки. Завітайте до нас за порцією натхнення та ароматним еспресо перед робочим днем.
+        </p>
         
-        <img src="interior.jpg" alt="Затишний інтер'єр кав'ярні Вінницький круасан" title="Наш затишний зал" width="500" loading="lazy">
+        <img src="interior.jpg" alt="Затишний інтер'єр кав'ярні Вінницький круасан" title="Наш затишний зал" width="500" height="333" loading="lazy" decoding="async" style="border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); margin-bottom: 40px;">
         
-        <h3>Атмосфера нашого закладу:</h3>
-        <iframe src="https://www.youtube.com/embed/_bNbada12iM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-        <h2>Не знаєте, що обрати?</h2>
-        <p>Натисніть на кнопку, і ми підберемо напій спеціально для вас!</p>
+        <h3>Атмосфера нашого закладу</h3>
         
-        <button class="accent-button" onclick="suggestCoffee()">Що мені випити?</button>
+        <iframe width="500" height="281" src="https://www.youtube.com/embed/_bNbada12iM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
         
-        <p id="coffee-result" style="margin-top: 15px; font-size: 18px;"></p>
+        <div style="margin-top: 60px; padding: 30px; background: #fff; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); display: inline-block; width: 100%; max-width: 600px;">
+            <h2 style="margin-top: 0;">Не знаєте, що обрати?</h2>
+            <p>Натисніть на кнопку, і ми підберемо напій спеціально для вас!</p>
+            
+            <button class="accent-button" onclick="suggestCoffee()" style="padding: 15px 40px; font-size: 18px; border-radius: 30px;">Що мені випити?</button>
+            
+            <p id="coffee-result" style="margin-top: 20px; font-size: 20px; font-weight: bold; color: #c89f7b; min-height: 24px;"></p>
+        </div>
     </main>
-    <hr>
+
     <footer>
         <p>&copy; 2026 Вінницький круасан. Всі права захищено.</p>
     </footer>
