@@ -52,21 +52,29 @@ body {
 }
 
 .coffee { 
+    will-change: transform, box-shadow;
+    transform: translateZ(0);
     background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=800'); 
 }
 
 .desserts { 
+    will-change: transform, box-shadow;
+    transform: translateZ(0);
     background-image: url('https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=800'); 
 }
 
 .card-content {
+    will-change: transform, box-shadow;
+    transform: translateZ(0);
     width: 100%;
     padding: 30px;
     background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
-    text-align: center; /* Центруємо написи "Кава та напої" і "Десерти" */
+    text-align: center;
 }
 
 .card-content span {
+    will-change: transform, box-shadow;
+    transform: translateZ(0);
     color: #ffffff;
     font-size: 26px;
     font-weight: 600;
@@ -253,6 +261,7 @@ iframe {
     text-align: center; 
     max-width: 800px;  
     margin-bottom: 60px;
+    will-change: transform;
 }
 
 .intro-content h2 {
